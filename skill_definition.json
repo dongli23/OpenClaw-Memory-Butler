@@ -1,0 +1,15 @@
+{
+  "name": "lobster_memory_management",
+  "description": "龙虾内存管家。支持 compact(压缩)、reset(重置)、status(精简状态)、full_status(全貌报告)。",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "enum": ["compact", "reset", "status", "full_status"],
+        "description": "compact(压缩/总结)、reset(重置会话)、status(精简状态报告)、full_status(详细全貌报告)"
+      }
+    },
+    "required": ["action"]
+  }
+}
